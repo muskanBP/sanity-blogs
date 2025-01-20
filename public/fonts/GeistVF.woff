@@ -1,0 +1,22 @@
+import { Geist, Geist_Mono } from "@next/font/google";
+
+// Define fonts
+const geist = Geist({
+  weight: ["100", "400", "700"], // Choose weights
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const geistMono = Geist_Mono({
+  weight: ["100", "400", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export default function App({ Component, pageProps }: any) {
+  return (
+    <main className={`${geist.className} ${geistMono.className}`}>
+      <Component {...pageProps} />
+    </main>
+  );
+}

@@ -1,0 +1,12 @@
+import localFont from "next/font/local";
+
+const geist = localFont({
+  src: "/fonts/Geist.ttf", // Path relative to the `public` folder
+  variable: "--font-geist",
+});
+
+const geistMono = localFont({
+  src: "/fonts/GeistMono.ttf",
+  variable: "--font-geist-mono",
+});
+
